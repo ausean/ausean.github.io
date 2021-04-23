@@ -60,3 +60,16 @@ plugins:
 sass:
   sass_dir: _sass
   style: compact #compressed
+
+collections:
+    portfolios:
+      output: true
+      permalink: /portfolios/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "portfolios"
+    values:
+      layout: "portfolio"

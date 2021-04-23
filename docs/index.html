@@ -15,4 +15,9 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+
+ {% assign portfolios = site.portfolios %}
+ {% for portfolio in portfolios %}
+    <a href="{{ portfolio.url }}">{{ portfolio.title }}</a>
+ {% endfor %}
 </div>
